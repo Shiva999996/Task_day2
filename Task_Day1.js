@@ -9,7 +9,7 @@ TOPICS:
 
 
 //Hoisting examples
-console.log("Hoisting examples ");
+console.log("\n====Hoisting examples===== ");
 
 // 1.var hoisting
 console.log(a); //undefined
@@ -59,7 +59,7 @@ var funday=function(){
 
 function inside(){
     console.log(innervar); //undefined
-    var innervar=10;
+    var innervar=20;
 }
 inside();
 
@@ -107,6 +107,8 @@ console.log(user2.role);//user
 
 
 //3️ EXECUTION CONTEXT & console.trace()
+
+console.log("\n======EXECUTION CONTEXT & console.trace()=======");
 
 // Call stack tracing
 function first() {
