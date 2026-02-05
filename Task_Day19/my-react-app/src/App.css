@@ -1,0 +1,81 @@
+/* Layout */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#root {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* App container */
+.app {
+  background: #020617;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+button {
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Content card */
+.content {
+  background: white;
+  border-radius: 8px;
+  height: 420px;
+  overflow-y: auto;
+  padding: 8px 0;
+  color: #020617;
+}
+.list-item,
+.virtual-row {
+  height: 40px;
+  display: flex;               
+  align-items: center;        
+  justify-content: center;     
+  font-size: 14px;
+  color: #0f172a;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.list-item:hover,
+.virtual-row:hover {
+  background: #f1f5f9;
+}
+
+/* Remove last border */
+.list-item:last-child {
+  border-bottom: none;
+}
