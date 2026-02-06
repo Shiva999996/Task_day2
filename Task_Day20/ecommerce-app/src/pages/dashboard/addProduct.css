@@ -1,0 +1,74 @@
+
+.add-product-page {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.add-product-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.add-product-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+
+/* Form */
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-product-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.add-product-field input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.add-product-field input:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.15);
+}
+
+.add-product-button {
+  margin-top: 8px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  background: #111827;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.add-product-button:hover {
+  background: #000000;
+}
+
+.add-product-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
