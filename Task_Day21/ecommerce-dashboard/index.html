@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-commerce Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+  <aside class="sidebar">
+    <h2>ShopAdmin</h2>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Orders</a>
+      <a href="#">Products</a>
+      <a href="#">Customers</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="user">Admin</div>
+    </header>
+
+    <section class="content">
+      <div class="stats">
+        <div class="card">Revenue</div>
+        <div class="card">Orders</div>
+        <div class="card">Users</div>
+        <div class="card">Returns</div>
+      </div>
+
+      <div class="lower">
+        <div class="orders">
+          <h3>Recent Orders</h3>
+        </div>
+        <div class="analytics">
+          <h3>Analytics</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<hr>
+
+
+
+
+<!-- complex UI -->
+
+<!-- 1. PRODUCT CARD -->
+<div class="product">
+  <img src="../ecommerce-dashboard//c-d-x-PDX_a_82obo-unsplash.jpg">
+  <h4>Headset</h4>
+  <p>$49.99</p>
+  <button>Add to cart</button>
+</div>
+
+<hr>
+
+<!-- STICKY CHECKOUT form -->
+<div class="checkout">
+  <form class="form">
+    <h3>Checkout</h3>
+
+    <div class="field">
+      <label for="name">Customer Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="field">
+      <label for="product">Product Name</label>
+      <input type="text" id="product" placeholder="Headset" readonly>
+    </div>
+
+    <div class="field">
+      <label for="price">Product Price</label>
+      <input type="text" id="price" placeholder="$49.99" readonly>
+    </div>
+
+    <div class="field">
+      <label>Payment Method</label>
+      <div class="payment">
+        <label>
+          <input type="radio" name="payment" required> UPI
+        </label>
+        <label>
+          <input type="radio" name="payment"> Cash on Delivery
+        </label>
+      </div>
+    </div>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <!-- ORDER SUMMARY -->
+  <div class="summary">
+    <h3>Order Summary</h3>
+    <p>Product: Headset</p>
+    <p>Price: $49.99</p>
+    <p>Delivery: Free</p>
+    <hr>
+    <strong>Total: $49.99</strong>
+  </div>
+</div>
+
+
+<hr>
+
+<!-- COMPLEX UI -->
+<header class="top-header">Shop</header>
+
+<div class="page">
+  <aside class="filters">
+    <h3>Filters</h3>
+    <p>Category</p>
+    <p>Price</p>
+    <p>Brand</p>
+  </aside>
+
+  <section class="products">
+    <div class="card">
+      <img src="../ecommerce-dashboard/download.jpg">
+      <h4>Skin Care</h4>
+      <p>$51</p>
+      <div class="overlay">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>

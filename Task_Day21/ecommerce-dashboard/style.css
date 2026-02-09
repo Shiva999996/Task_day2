@@ -1,0 +1,277 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* dashboard  */
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #1f2933;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 64px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.lower {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.orders {
+  flex: 2;
+  background: white;
+  padding: 20px;
+}
+
+.analytics {
+  flex: 1;
+  background: white;
+  padding: 20px;
+}
+
+/* product card */
+
+.product {
+  width: 250px;
+  background: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product button {
+  margin-top: auto;
+  background: #1f2933;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+/* sticky checkout */
+.checkout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form {
+  flex: 2;
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.summary {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+/*  */
+
+.top-header {
+  height: 60px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.filters {
+  width: 240px;
+  background: #98999b;
+  padding: 20px;
+}
+
+.products {
+  flex: 1;
+  padding: 20px;
+}
+
+.products .card {
+  position: relative;
+  width: 220px;
+  height: auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.products img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.products .card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay button {
+  padding: 8px 12px;
+}
+
+/* bugs fixing */
+
+/* Bug 1: Absolute not working */
+.abs-parent {
+  position: relative;
+}
+.abs-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Bug 2: Sticky not sticking */
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* Bug 3: Modal behind overlay */
+.overlay-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 5;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  background: white;
+  padding: 20px;
+}
+
+/* Bug 4: Tooltip clipped */
+.tooltip-parent {
+  overflow: visible;
+  position: relative;
+}
+
+/* Bug 5: z-index ignored */
+.stack-parent {
+  position: relative;
+}
+.stack-child {
+  position: absolute;
+  z-index: 2;
+}
