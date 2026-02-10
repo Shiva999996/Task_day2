@@ -1,0 +1,327 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  background: #f8f9fa;
+  color: #111;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 14px 36px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 40px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.header-right {
+  display: flex;
+  gap: 32px;
+}
+
+.signin span {
+  font-size: 12px;
+  color: #555;
+}
+
+.cart {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= HEADER FEATURES ================= */
+.header-features {
+  display: flex;
+  gap: 18px;
+  padding: 10px 36px;
+  background: #232f3e;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ================= BUTTONS ================= */
+.black-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.black-btn.small {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.black-btn:hover {
+  background: #000;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+  padding: 50px 48px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 26px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+}
+
+.price span {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* ================= RECOMMENDED ================= */
+.recommended {
+  padding: 50px 48px;
+  background: #fff;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+}
+
+.recommend-card {
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+}
+
+.recommend-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+/* ================= PERSONALIZED ================= */
+.personalized {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.signin-btn {
+  background: #ece518;
+  color: #0b0b0b;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ================= BACK TO TOP ================= */
+.back-to-top {
+  background: #37475a;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #232f3e;
+  color: #ddd;
+  padding: 40px 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+.footer p {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3a4553;
+  margin-top: 30px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+/* ================= DARK MODE ================= */
+body:has(.theme-toggle input:checked) {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body:has(.theme-toggle input:checked) .header,
+body:has(.theme-toggle input:checked) .recommended,
+body:has(.theme-toggle input:checked) .personalized {
+  background: #020617;
+  border-color: #1e293b;
+}
+
+body:has(.theme-toggle input:checked) .header-features,
+body:has(.theme-toggle input:checked) .footer {
+  background: #020617;
+}
+
+body:has(.theme-toggle input:checked) .product-card,
+body:has(.theme-toggle input:checked) .recommend-card {
+  background: #020617;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+body:has(.theme-toggle input:checked) input {
+  background: #020617;
+  color: #fff;
+  border: 1px solid #334155;
+}
+
+body:has(.theme-toggle input:checked) .black-btn {
+  background: #fff;
+  color: #000;
+}
+
+body:has(.theme-toggle input:checked) .price span {
+  color: #94a3b8;
+}
+
+body:has(.theme-toggle input:checked) .back-to-top {
+  background: #020617;
+}
+
+/* ================= MOBILE FIXES ================= */
+@media (max-width: 768px) {
+
+  .header {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .header-features {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 16px;
+  }
+
+  .header-features::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .products,
+  .recommended {
+    padding: 32px 16px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+}
