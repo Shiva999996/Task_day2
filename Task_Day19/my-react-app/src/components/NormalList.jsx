@@ -1,7 +1,7 @@
 import React from "react";
 
 const Row = React.memo(({ item }) => {
-  // simulate expensive render
+  
   let sum = 0;
   for (let i = 0; i < 300000; i++) {
     sum += i;

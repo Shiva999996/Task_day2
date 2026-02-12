@@ -35,7 +35,7 @@ function submitForm(data) {
 
 
 try {
-  submitForm({ name: "Shivaji" ,}); 
+  submitForm({ name: "Shivaji"}); 
 } catch (error) {
   errorHandler(error);
 }

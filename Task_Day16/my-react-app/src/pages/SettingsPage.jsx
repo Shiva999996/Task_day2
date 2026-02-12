@@ -10,7 +10,7 @@ function SettingsPage() {
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <button onClick={toggle}>
               {on ? "Disable notifications" : "Enable notifications"}
-            </button>
+            </button>+
 
             <span>Status: {on ? "ON" : "OFF"}</span>
           </div>

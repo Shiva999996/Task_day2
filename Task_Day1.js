@@ -78,79 +78,87 @@ console.log(num);
 console.log("\n===== MEMORY VISUALIZATION =====");
 
 // Object reference example
-let obj1={name:"shivaji"};
+let obj1={name:"shivaji",standard:"10",rollno:"432"};
 let obj2=obj1;
 
 obj2.name="raj";
+obj2.standard="12";
+obj2.rollno="431"
 console.log(obj1.name);
 console.log(obj2.name);
-
-
-// Primitive value copy
-
-let num1=10;
-let num2=num1;
-num2=20;
-
-console.log(num1);//10
-console.log(num2);//20
-
-// Cloning object to avoid reference
-let user1={role:"Admin"};
-let user2={...user1};
-
-user2.role="user";
-console.log(user1.role); //admin
-console.log(user2.role);//user
+console.log(obj2.standard);
+console.log(obj2.rollno);
+console.log(obj2);
 
 
 
 
-//3️ EXECUTION CONTEXT & console.trace()
 
-console.log("\n======EXECUTION CONTEXT & console.trace()=======");
+// // Primitive value copy
 
-// Call stack tracing
-function first() {
-    console.log("first");
-  second();
-}
+// let num1=10;
+// let num2=num1;
+// num2=20;
 
-function second() {
-    console.log("second");
-  third();
-}
+// console.log(num1);//10
+// console.log(num2);//20
 
-function third() {
-  console.trace("Trace inside third()");
-}
+// // Cloning object to avoid reference
+// let user1={role:"Admin"};
+// let user2={...user1};
 
-first();
-
-// Execution context flow
-function calculate(x) {
-  console.trace("Inside calculate()");
-  return x * 2;
-}
-
-function processData() {
-  let result = calculate(5);
-  console.log("Result:", result);
-}
-
-processData();
+// user2.role="user";
+// console.log(user1.role); //admin
+// console.log(user2.role);//user
 
 
-// Async execution trace
-function main() {
-  setTimeout(task, 500);
-}
 
-function task() {
-  console.trace("Async task trace");
-}
 
-main();
+// //3️ EXECUTION CONTEXT & console.trace()
+
+// console.log("\n======EXECUTION CONTEXT & console.trace()=======");
+
+// // Call stack tracing
+// function first() {
+//     console.log("first");
+//   second();
+// }
+
+// function second() {
+//     console.log("second");
+//   third();
+// }
+
+// function third() {
+//   console.trace("Trace inside third()");
+// }
+
+// first();
+
+// // Execution context flow
+// function calculate(x) {
+//   console.trace("Inside calculate()");
+//   return x * 2;
+// }
+
+// function processData() {
+//   let result = calculate(5);
+//   console.log("Result:", result);
+// }
+
+// processData();
+
+
+// // Async execution trace
+// function main() {
+//   setTimeout(task, 500);
+// }
+
+// function task() {
+//   console.trace("Async task trace");
+// }
+
+// main();
 
 
 

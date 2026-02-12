@@ -243,7 +243,8 @@ button {
 /* Bug 2: Sticky not sticking */
 .sticky {
   position: sticky;
-  top: 0;
+  top: 0; 
+  /* sticky needs top , bottomm right or left */
 }
 
 /* Bug 3: Modal behind overlay */
@@ -275,3 +276,4 @@ button {
   position: absolute;
   z-index: 2;
 }
+

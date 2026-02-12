@@ -27,6 +27,7 @@ const Modal = ({isOpen, onClose, children }) => {
      return createPortal(
     <div className="overlay" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
+        {/* Click inside the modal (stopPropagation) prevents it from closing */}
         {children}
       </div>
     </div>,
@@ -36,4 +37,4 @@ const Modal = ({isOpen, onClose, children }) => {
 
 
 
-export default Modal
+export default Modal;

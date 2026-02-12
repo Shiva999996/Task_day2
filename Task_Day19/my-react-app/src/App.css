@@ -1,4 +1,4 @@
-/* Layout */
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -14,7 +14,6 @@ body {
   max-width: 900px;
 }
 
-/* App container */
 .app {
   background: #020617;
   border-radius: 12px;
@@ -22,7 +21,6 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Buttons */
 .controls {
   display: flex;
   justify-content: center;
@@ -49,7 +47,6 @@ button:active {
   transform: scale(0.97);
 }
 
-/* Content card */
 .content {
   background: white;
   border-radius: 8px;
@@ -75,7 +72,6 @@ button:active {
   background: #f1f5f9;
 }
 
-/* Remove last border */
 .list-item:last-child {
   border-bottom: none;
 }

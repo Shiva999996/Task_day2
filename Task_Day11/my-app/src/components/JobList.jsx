@@ -18,3 +18,4 @@ const JobList = ({jobs}) => {
 }
 
 export default JobList;
+ 

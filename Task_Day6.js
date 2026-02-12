@@ -22,13 +22,11 @@ class admin extends user{
 }
 
 const normalUser = new user("Shivaji");
-const normalAdmin=new admin("saurabh")
+const normalAdmin=new admin("saurabh");
 console.log(normalUser.username);  
 console.log(normalUser.login()); 
 console.log(normalAdmin.username);
 console.log(normalAdmin.deleteaccount());
-
-
 
 
 
@@ -57,7 +55,7 @@ console.log(pass1.checkpass());
 
 
 function StringUtil(str){
-     this.str=str
+     this.str=str 
 }
 
 StringUtil.prototype.capital=function(){
